@@ -1,0 +1,18 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Hambúrguer",
+      "address": "Rua I",
+      "phone": "1935353535",
+      "membeship": "Platinum"
+    },
+    {
+      "id": 2,
+      "name": "X-Búrguer",
+      "address": "Rua II",
+      "phone": "1935353535",
+      "membeship": "Pro"
+    }
+  ]
+}
