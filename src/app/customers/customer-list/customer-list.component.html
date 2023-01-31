@@ -15,15 +15,12 @@
     </tr> -->
     <tr></tr>
     <!-- <tr *ngFor="let customer of customers$ | async"> -->
-      <tr>
-      <!-- <th scope="row">{{ customer.name }}</th> -->
+    <tr *ngFor="let customer of customers">
+      <th scope="row">{{ customer.name }}</th>
       <th scope="row">-</th>
-      <!-- <td>{{ customer.phone }}</td> -->
-      <td>-</td>
-      <!-- <td>{{ customer.address }}</td> -->
-      <td>-</td>
-      <!-- <td>{{ customer.membership }}</td> -->
-      <td>-</td>
+      <td>{{ customer.phone }}</td>
+      <td>{{ customer.address }}</td>
+      <td>{{ customer.membership }}</td>
       <th>
         <a>edit</a>
         <!-- <a (click)=editCustomer(customer)>edit</a> -->
