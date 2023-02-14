@@ -5,14 +5,14 @@
       "name": "Toby Ziegler",
       "address": "Rua I",
       "phone": "1935353535",
-      "membeship": "Platinum"
+      "membership": "Platinum"
     },
     {
       "id": 2,
       "name": "Sam Seaborn",
       "address": "Rua II",
       "phone": "1935353535",
-      "membeship": "Pro"
+      "membership": "Pro"
     }
   ]
 }
