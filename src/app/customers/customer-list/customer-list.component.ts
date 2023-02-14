@@ -24,7 +24,7 @@ export class CustomerListComponent implements OnInit {
   }
 
   deleteCustomer(customer: Customer) {
-    if (confirm('Are You Sure You want to Delete the User?')) {
+    if (confirm('Tem certeza de que deseja excluir o cliente?')) {
       this.store.dispatch(
         new customerActions.DeleteCustomer(Number(customer.id))
       );

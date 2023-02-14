@@ -1,47 +1,61 @@
-<h3>Add Customer</h3>
+<div class="card">
+  <div class="card-header">Adicionar Cliente</div>
+  <div class="card-body">
+    <h5 class="card-title">Adicione novos clientes</h5>
+    <form [formGroup]="customerForm" (submit)="createCustomer()">
+      <div class="row">
+        <div class="col-8">
+          <label class="sr-only" for="name">Nome</label>
+          <div class="input-group mb-2 mr-sm-2">
+            <input
+              type="text"
+              class="form-control"
+              formControlName="name"
+              placeholder="Nome"
+            />
+          </div>
+        </div>
 
-<form
-  [formGroup]="customerForm"
-  (submit)="createCustomer()"
-  class="form-inline mb-4"
->
-  <label class="sr-only" for="Name">Name</label>
-  <div class="input-group mb-2 mr-sm-2">
-    <input
-      type="text"
-      class="form-control"
-      formControlName="name"
-      placeholder="name"
-    />
-  </div>
+        <div class="col-4">
+          <label class="sr-only" for="phone">Telefone</label>
+          <div class="input-group mb-2 mr-sm-2">
+            <input
+              type="text"
+              class="form-control"
+              formControlName="phone"
+              placeholder="Telefone"
+              mask="(00) 0000-0000"
+              [dropSpecialCharacters]="false"
+            />
+          </div>
+        </div>
+      </div>
 
-  <label class="sr-only" for="Phone">Phone</label>
-  <div class="input-group mb-2 mr-sm-2">
-    <input
-      type="text"
-      class="form-control"
-      formControlName="phone"
-      placeholder="Phone"
-    />
-  </div>
+      <div class="row">
+        <div class="col-8">
+          <label class="sr-only" for="address">Endereço</label>
+          <div class="input-group mb-2 mr-sm-2">
+            <input
+              type="text"
+              class="form-control"
+              formControlName="address"
+              placeholder="Endereço"
+            />
+          </div>
+        </div>
 
-  <label class="sr-only" for="Address">Address</label>
-  <div class="input-group mb-2 mr-sm-2">
-    <input
-      type="text"
-      class="form-control"
-      formControlName="address"
-      placeholder="Address"
-    />
+        <div class="col-4">
+          <label class="sr-only" for="membership">Membership</label>
+          <div class="input-group mb-2 mr-sm-2">
+            <select formControlName="membership" class="form-control">
+              <option>Basic</option>
+              <option>Pro</option>
+              <option>Platinum</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary mb-2">Adicionar</button>
+    </form>
   </div>
-
-  <label class="sr-only" for="membership">Membership</label>
-  <div class="input-group mb-2 mr-sm-2">
-    <select formControlName="membership" class="form-control">
-      <option>Basic</option>
-      <option>Pro</option>
-      <option>Platinum</option>
-    </select>
-  </div>
-  <button type="submit" class="btn btn-primary mb-2">Add Customer</button>
-</form>
+</div>

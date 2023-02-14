@@ -2,17 +2,31 @@
   "customers": [
     {
       "id": 1,
-      "name": "Toby Ziegler",
-      "address": "Rua I",
-      "phone": "1935353535",
-      "membership": "Platinum"
+      "name": "Jed Bartlet",
+      "address": "Avenida Pensilvânia 1600, Washington D.C.",
+      "phone": "(19) 3541-3541",
+      "membership": "Premium"
     },
     {
       "id": 2,
+      "name": "Toby Ziegler",
+      "address": "Rua Casa Branca 911, Araras/SP",
+      "phone": "(19) 3542-3542",
+      "membership": "Padrão"
+    },
+    {
+      "id": 3,
       "name": "Sam Seaborn",
-      "address": "Rua II",
-      "phone": "1935353535",
-      "membership": "Pro"
+      "address": "Avenida Constituição 1999, Araras/SP",
+      "phone": "(19) 3543-3543",
+      "membership": "Básico"
+    },
+    {
+      "id": 4,
+      "name": "Josh Lyman",
+      "address": "Rua POTUS 46, Araras/SP",
+      "phone": "(19) 3544-3544",
+      "membership": "Padrão"
     }
   ]
 }

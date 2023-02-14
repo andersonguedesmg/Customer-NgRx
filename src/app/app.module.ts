@@ -18,6 +18,7 @@ import { CustomSerializer } from './shared/utils';
 
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, NavbarComponent],
@@ -32,8 +33,13 @@ import { NavbarComponent } from './navbar/navbar.component';
     StoreDevtoolsModule.instrument(),
     EffectsModule.forRoot([]),
     HttpClientModule,
+    NgxMaskDirective,
+    NgxMaskPipe,
   ],
-  providers: [{ provide: RouterStateSerializer, useClass: CustomSerializer }],
+  providers: [
+    { provide: RouterStateSerializer, useClass: CustomSerializer },
+    provideNgxMask(),
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

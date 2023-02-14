@@ -10,6 +10,7 @@ import { StoreModule } from '@ngrx/store';
 import { customerReducer } from './state/customer.reducer';
 import { EffectsModule, Actions } from '@ngrx/effects';
 import { CustomerEffect } from './state/customer.effects';
+import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 
 const customerRoutes: Routes = [{ path: '', component: CustomerComponent }];
 
@@ -27,6 +28,9 @@ const customerRoutes: Routes = [{ path: '', component: CustomerComponent }];
     RouterModule.forChild(customerRoutes),
     EffectsModule.forFeature([CustomerEffect]),
     StoreModule.forFeature('customers', customerReducer),
+    NgxMaskDirective,
+    NgxMaskPipe,
   ],
+  providers: [provideNgxMask()]
 })
 export class CustomersModule {}
