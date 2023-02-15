@@ -1,16 +1,26 @@
 <h1 align="center">Customer-NgRx</h1>
 
-### Descrição
+### Descrição:
 
 Sistema simples para realizar o CRUD de cliente utilizando NgRx
 
 ### Tecnologias
 
-- [Angular](https://angular.io/)
+- [Angular 15](https://angular.io/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [NgRx](https://ngrx.io/)
+- [Bootstrap](https://getbootstrap.com/)
 - [JSON Server](https://github.com/typicode/json-server)
 - [ngx-mask](https://jsdaddy.github.io/ngx-mask/)
+
+### Pré-requisitos
+
+Antes de começar, é preciso ter instalado em sua máquina as seguintes ferramentas:
+
+- [Git](https://git-scm.com)
+- [Node.js](https://nodejs.org/en/)
+- [Angular CLI](https://angular.io/cli)
+- [VSCode](https://code.visualstudio.com/)
 
 ### Rodando localmente
 
@@ -43,3 +53,11 @@ Acesse no navegador
 ```bash
 http://localhost:4200/
 ```
+
+### Features
+
+- [x] Cadastro de Cliente
+- [x] Edição de Cliente
+- [x] Atualização de Cliente
+- [x] Exclusão de Cliente
+- [x] Listagem dos Clientes
